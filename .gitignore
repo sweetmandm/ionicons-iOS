@@ -1,18 +1,22 @@
-.DS_Store
+# Exclude the build directory
+build/*
+ 
+# Exclude temp nibs and swap files
+*~.nib
 *.swp
-build/
-*.pbxuser
-!default.pbxuser
+ 
+# Exclude OS X folder attributes
+.DS_Store
+ 
+# Exclude user-specific XCode 3 and 4 files
+*.mode1
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
+*.perspective
 *.perspectivev3
-!default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
+*.pbxuser
+#*.xcworkspace
 xcuserdata
-profile
-*.moved-aside
-DerivedData
-.idea/
+
+# Cocoapods
+*/Pods/*
