@@ -1,7 +1,10 @@
 # ionicons-iOS
-Easily use ionicons in your iOS projects
+Easily use ionicons in your native SDK iOS projects
 
 *Currently using ionicons 1.2.2*  
+
+### About
+As of version ionicons v1.2.2, about half the icons are iOS 7 system icons, and the other half ar flat icons in a similar style. The great thing about ionicons is it makes the system icons a lot handier and more customizable, while adding more icon options. Also, with ionicons-iOS you can use iOS 7 system icons in your native SDK iOS 5+ projects, so your designs will have a consistent appearance across all OS versions.
 
 ### Usage:
 
