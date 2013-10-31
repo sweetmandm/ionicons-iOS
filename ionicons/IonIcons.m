@@ -6,6 +6,7 @@
 //
 
 #import "IonIcons.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation IonIcons
 

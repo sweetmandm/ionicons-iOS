@@ -5,7 +5,7 @@
 //  ==========================
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import "ionicons-codes.h"
 
