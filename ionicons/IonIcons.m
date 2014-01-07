@@ -17,7 +17,7 @@
 
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
-    return [UIFont fontWithName:@"icomoon" size:size];
+    return [UIFont fontWithName:@"ionicons" size:size];
 }
 
 + (UILabel*)labelWithIcon:(NSString*)icon_name
