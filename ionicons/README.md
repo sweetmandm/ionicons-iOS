@@ -1,7 +1,7 @@
 # IonIcons-iOS
 Easily use IonIcons in your iOS projects
 
-*Currently using ionicons 1.2.2*  
+*Currently using ionicons 1.4.1*  
 
 ### Usage:
 

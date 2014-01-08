@@ -17,7 +17,7 @@
 
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
-    return [UIFont fontWithName:@"icomoon" size:size];
+    return [UIFont fontWithName:@"ionicons" size:size];
 }
 
 + (UILabel*)labelWithIcon:(NSString*)icon_name
@@ -55,7 +55,7 @@
                  iconSize:(CGFloat)iconSize
                 imageSize:(CGSize)imageSize;
 {
-    NSAssert(icon_name, @"You must specify an icon from font-awesome-codes.h.");
+    NSAssert(icon_name, @"You must specify an icon from ionicons-codes.h.");
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6) {
         if (!iconColor) { iconColor = [UIColor blackColor]; }
