@@ -25,6 +25,13 @@
                      size:(CGFloat)size
                     color:(UIColor*)color;
 
+/*  Convenience method to make an existing UILabel sized-to-fit with an icon in the given font size and color.
+ */
++ (void)labelWithIcon:(NSString*)icon_name
+                 size:(CGFloat)size
+                color:(UIColor*)color
+            withLabel:(UILabel*)label;
+
 
 //================================
 // Image Methods
