@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ionicons"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "ionicons-iOS allows you to easily use ionicons icons in your iOS projects."
   s.homepage     = "https://github.com/TapTemplate/ionicons-iOS"
   s.license      = { :type => 'MIT', :file => 'ionicons/LICENSE' }
