@@ -339,6 +339,7 @@
 #define icon_ios7_rewind_outline @"\uf1d7"
 #define icon_ios7_search @"\uf1da"
 #define icon_ios7_search_strong @"\uf1d9"
+#define icon_ios7_settings_strong @"\uf338"
 #define icon_ios7_skipbackward @"\uf1dc"
 #define icon_ios7_skipbackward_outline @"\uf1db"
 #define icon_ios7_skipforward @"\uf1de"
