@@ -70,11 +70,16 @@
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6) {
         if (!iconColor) { iconColor = [UIColor blackColor]; }
         
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+        style.alignment = NSTextAlignmentLeft;
+        style.baseWritingDirection = NSWritingDirectionLeftToRight;
+        
         UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
         NSAttributedString* attString = [[NSAttributedString alloc]
                                          initWithString:icon_name
                                          attributes:@{NSFontAttributeName: [IonIcons fontWithSize:iconSize],
-                                                      NSForegroundColorAttributeName : iconColor}];
+                                                      NSForegroundColorAttributeName : iconColor,
+                                                      NSParagraphStyleAttributeName : style}];
         // get the target bounding rect in order to center the icon within the UIImage:
         NSStringDrawingContext *ctx = [[NSStringDrawingContext alloc] init];
         CGRect boundingRect = [attString boundingRectWithSize:CGSizeMake(iconSize, iconSize) options:0 context:ctx];
