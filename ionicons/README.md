@@ -1,7 +1,7 @@
 # IonIcons-iOS
 Easily use IonIcons in your iOS projects
 
-*Currently using ionicons 1.4.1*  
+*Currently using ionicons 2.0*
 
 ### Usage:
 
@@ -18,8 +18,8 @@ Make a UILabel with a IonIcons Icon:
 Render a IonIcons icon in a UIImage:
 
         UIImage *icon = [IonIcons imageWithIcon:icon_ionic
-                                      iconColor:[UIColor redColor] 
-                                       iconSize:60.0f 
+                                      iconColor:[UIColor redColor]
+                                       iconSize:60.0f
                                       imageSize:CGSizeMake(90.0f, 90.0f)];
 
 
