@@ -39,7 +39,7 @@ end
 def updateReadme(version)
   text = File.read('README.md')
   new_contents = text.gsub( /^Currently using.*$/, "Currently using: #{version}")
-  readme_file = File.open('README.md', 'w') { |file| file.puts new_contents }
+  readme_file = File.open('ionicons/README.md', 'w') { |file| file.puts new_contents }
 end
 
 def updatePodspec(version)
