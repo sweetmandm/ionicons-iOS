@@ -1,7 +1,7 @@
 # ionicons-iOS
 Easily use ionicons in your native SDK iOS projects
 
-*Currently using ionicons 1.5.2*  
+Currently using: Ionicons v2.0.1
 
 ### About
 The ionicons icon set includes a lot of iOS system icons as well as plenty of handy additions. The great thing about ionicons is it makes the system icons a lot handier and more customizable, while adding more icon options. Also, with ionicons-iOS you can use iOS 7 system icons in your native SDK iOS 5+ projects, so your designs will have a consistent appearance across all OS versions.
