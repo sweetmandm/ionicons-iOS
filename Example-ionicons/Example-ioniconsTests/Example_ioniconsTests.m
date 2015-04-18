@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "allIconCodes.h"
+#import "IonIcons.h"
 
 @interface Example_ioniconsTests : XCTestCase
 
@@ -28,7 +30,14 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSLog(@"%@", allIconCodes());
+    XCTAssertNil(nil);
+}
+
+- (void)testForValidFontName
+{
+    UIFont* fontName = [IonIcons fontWithSize:15.0];
+    XCTAssertNotNil(fontName);
 }
 
 @end

@@ -65,6 +65,8 @@
 		554206AD18217179005A3D9E /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		554206AE18217179005A3D9E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		554206AF18217179005A3D9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
+		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,8 @@
 			children = (
 				5542069F18217160005A3D9E /* Example_ioniconsTests.m */,
 				5542069A18217160005A3D9E /* Supporting Files */,
+				6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */,
+				6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */,
 			);
 			path = "Example-ioniconsTests";
 			sourceTree = "<group>";
@@ -204,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554206A618217160005A3D9E /* Build configuration list for PBXNativeTarget "Example-ioniconsTests" */;
 			buildPhases = (
+				6303D8EA1AE2AE5B00FCC5BF /* ShellScript */,
 				5542068E18217160005A3D9E /* Sources */,
 				5542068F18217160005A3D9E /* Frameworks */,
 				5542069018217160005A3D9E /* Resources */,
@@ -275,6 +280,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6303D8EA1AE2AE5B00FCC5BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Example-ioniconsTests/generateAllIconCodesArray.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5542066A1821715F005A3D9E /* Sources */ = {
