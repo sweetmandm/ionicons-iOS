@@ -27,6 +27,7 @@
 		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
 		554206B318217179005A3D9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 554206AF18217179005A3D9E /* README.md */; };
 		698BB1371AE2DC2A006F888D /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 698BB1361AE2DC2A006F888D /* .travis.yml */; };
+		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		554206AD18217179005A3D9E /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		554206AE18217179005A3D9E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		554206AF18217179005A3D9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		55E4275A1AE2DB6A00EF1098 /* FontInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontInspector.h; sourceTree = "<group>"; };
+		55E4275B1AE2DB6A00EF1098 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
 		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
 		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
 		698BB1361AE2DC2A006F888D /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
@@ -182,6 +185,8 @@
 				554206AD18217179005A3D9E /* ionicons.ttf */,
 				554206AE18217179005A3D9E /* LICENSE */,
 				554206AF18217179005A3D9E /* README.md */,
+				55E4275A1AE2DB6A00EF1098 /* FontInspector.h */,
+				55E4275B1AE2DB6A00EF1098 /* FontInspector.m */,
 			);
 			name = ionicons;
 			path = ../../ionicons;
@@ -308,6 +313,7 @@
 			files = (
 				5542068B18217160005A3D9E /* ViewController.m in Sources */,
 				5542068218217160005A3D9E /* AppDelegate.m in Sources */,
+				55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */,
 				5542067E18217160005A3D9E /* main.m in Sources */,
 				554206B018217179005A3D9E /* IonIcons.m in Sources */,
 			);

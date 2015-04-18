@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "allIconCodes.h"
 #import "IonIcons.h"
+#import "FontInspector.h"
 @import CoreText;
 
 @interface Example_ioniconsTests : XCTestCase
@@ -36,16 +37,13 @@
 - (void)testIconNamesReturnGlyphs
 {
     NSArray *iconNamesArray = allIconCodes();
-    CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)[IonIcons fontWithSize:10].fontName, 10.0, NULL);
+    UIFont *font = [IonIcons fontWithSize:10.0];
     
     for (NSString *iconName in iconNamesArray) {
-        for (int i = 0; i < iconName.length; i++) {
-            BOOL doesGlyphExist = [self doesGlyph:[iconName characterAtIndex:i] existInFont:font];
-            XCTAssertNotEqual(doesGlyphExist, NO, @"Glyph doesn't exist");
-        }
+        BOOL exists = [FontInspector doGlyphsReferencedInString:iconName existInFont:font];
+        XCTAssertTrue(exists,
+                      @"This iconName references a character that doesn't exist in this font: %@", iconName);
     }
-    
-    CFRelease(font);
 }
 
 - (BOOL)doesGlyph:(unichar)character existInFont:(CTFontRef)font
