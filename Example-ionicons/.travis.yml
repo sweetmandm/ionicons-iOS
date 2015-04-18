@@ -1,3 +1,4 @@
 language: objective-c
 script:
-- xctool -project Example-ionicons.xcodeproj -target Example-ionicons -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool -project Example-ionicons.xcodeproj -scheme Example-ionicons -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool -project Example-ionicons.xcodeproj -scheme Example-ioniconsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
