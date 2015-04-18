@@ -18,7 +18,7 @@
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
     UIFont* font = [UIFont fontWithName:@"ionicons" size:size];
-    NSAssert(font, @"You must load the font first!");
+    NSAssert(font, @"Make sure you've added the font to the Info.plist first! View README.md for instructions.");
     return font;
 }
 
