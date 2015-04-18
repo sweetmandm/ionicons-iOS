@@ -26,7 +26,6 @@
 		554206B118217179005A3D9E /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554206AD18217179005A3D9E /* ionicons.ttf */; };
 		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
 		554206B318217179005A3D9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 554206AF18217179005A3D9E /* README.md */; };
-		698BB1371AE2DC2A006F888D /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 698BB1361AE2DC2A006F888D /* .travis.yml */; };
 		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		55E4275B1AE2DB6A00EF1098 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
 		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
 		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
-		698BB1361AE2DC2A006F888D /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 				5542068A18217160005A3D9E /* ViewController.m */,
 				5542068C18217160005A3D9E /* Images.xcassets */,
 				5542067818217160005A3D9E /* Supporting Files */,
-				698BB1361AE2DC2A006F888D /* .travis.yml */,
 			);
 			path = "Example-ionicons";
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 			files = (
 				554206B218217179005A3D9E /* LICENSE in Resources */,
 				5542068818217160005A3D9E /* Main_iPad.storyboard in Resources */,
-				698BB1371AE2DC2A006F888D /* .travis.yml in Resources */,
 				554206B118217179005A3D9E /* ionicons.ttf in Resources */,
 				554206B318217179005A3D9E /* README.md in Resources */,
 				5542068D18217160005A3D9E /* Images.xcassets in Resources */,
