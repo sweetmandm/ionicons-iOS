@@ -109,7 +109,7 @@
 
 + (UIImage*)renderImageWithNSStirngDrawingWithIconName:(NSString*)icon_name iconColor:(UIColor*)iconColor iconSize:(CGFloat)iconSize imageSize:(CGSize)imageSize
 {
-    if (!iconColor) { iconColor = [UIColor blackColor]; }
+    if (!iconColor) { iconColor = [self defaultColor]; }
     
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     style.alignment = NSTextAlignmentLeft;
@@ -159,6 +159,11 @@
     }
     UIGraphicsEndImageContext();
     return iconImage;
+}
+
++ (UIColor*)defaultColor
+{
+    return [UIColor blackColor];
 }
 
 @end
