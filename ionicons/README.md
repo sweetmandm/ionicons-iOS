@@ -1,6 +1,8 @@
 # ionicons-iOS
 Easily use ionicons in your native SDK iOS projects
 
+[![Build Status](https://travis-ci.org/sweetmandm/ionicons-iOS.svg)](https://travis-ci.org/sweetmandm/ionicons-iOS)
+
 Currently using: Ionicons v2.0.1
 
 ### About

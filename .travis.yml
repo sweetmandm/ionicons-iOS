@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: Example-ionicons/Example-ionicons.xcodeproj
+xcode_scheme: Example-ioniconsTests
+xcode_sdk: iphonesimulator
