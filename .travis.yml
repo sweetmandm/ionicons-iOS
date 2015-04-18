@@ -1,3 +1,3 @@
 language: objective-c
 xcode_project: Example-ionicons/Example-ionicons.xcodeproj
-xcode_scheme: Example-ionicons
+xcode_scheme: Example-ioniconsTests
