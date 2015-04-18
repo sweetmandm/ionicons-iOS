@@ -17,7 +17,9 @@
 
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
-    return [UIFont fontWithName:@"ionicons" size:size];
+    UIFont* font = [UIFont fontWithName:@"ionicons" size:size];
+    NSAssert(font, @"You must load the font first!");
+    return font;
 }
 
 + (UILabel*)labelWithIcon:(NSString*)icon_name
