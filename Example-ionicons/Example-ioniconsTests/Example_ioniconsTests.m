@@ -20,19 +20,11 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-}
-
-- (void)testExample
-{
-    NSLog(@"%@", allIconCodes());
-    XCTAssertNil(nil);
 }
 
 - (void)testForValidFontName
@@ -43,8 +35,8 @@
 
 - (void)testIconNamesReturnGlyphs
 {
-    NSArray *iconNamesArray = [self iconNamesArray];
-    UIFont *font = [IonIcons fontWithSize:10];
+    NSArray *iconNamesArray = allIconCodes();
+    CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)[IonIcons fontWithSize:10].fontName, 10.0, NULL);
     
     for (NSString *iconName in iconNamesArray) {
         for (int i = 0; i < iconName.length; i++) {
@@ -52,24 +44,17 @@
             XCTAssertNotEqual(doesGlyphExist, NO, @"Glyph doesn't exist");
         }
     }
+    
+    CFRelease(font);
 }
 
-- (BOOL)doesGlyph:(unichar)character existInFont:(UIFont *)font
+- (BOOL)doesGlyph:(unichar)character existInFont:(CTFontRef)font
 {
     UniChar characters[] = { character };
     CGGlyph glyphs[1] = { };
-    CTFontRef ctFont = CTFontCreateWithName((CFStringRef)font.fontName, font.pointSize, NULL);
     
-    BOOL ret = CTFontGetGlyphsForCharacters(ctFont, characters, glyphs, 1);
-    
-//    CFRelease(ctFont);
-    
+    BOOL ret = CTFontGetGlyphsForCharacters(font, characters, glyphs, 1);
     return ret;
-}
-
-- (NSArray *)iconNamesArray
-{
-    return @[ion_android_cart, ion_android_add_circle];
 }
 
 @end
