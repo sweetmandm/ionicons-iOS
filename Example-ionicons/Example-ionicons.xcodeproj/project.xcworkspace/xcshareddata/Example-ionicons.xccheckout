@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E00C8213-2965-4650-AA7A-615C5267C392</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Example-ionicons</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1FCFBCFEA0590421EE709526B17DF00BD9DCB7F9</key>
-		<string>https://github.com/sweetmandm/ionicons-iOS.git</string>
+		<string>github.com:sweetmandm/ionicons-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Example-ionicons/Example-ionicons.xcodeproj/project.xcworkspace</string>
+	<string>Example-ionicons/Example-ionicons.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1FCFBCFEA0590421EE709526B17DF00BD9DCB7F9</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sweetmandm/ionicons-iOS.git</string>
+	<string>github.com:sweetmandm/ionicons-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
