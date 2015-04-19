@@ -44,6 +44,17 @@
     }
 }
 
+- (void)testBadNamesReturnNoGlyphs {
+    NSArray *badNames = @[@"q", @"what", @"ion-ionic", @"\u039E", @"\u04FA", @"\U0001F30D"];
+    UIFont *font = [IonIcons fontWithSize:10.0];
+    
+    for (NSString *name in badNames) {
+        BOOL exists = [FontInspector doGlyphsReferencedInString:name existInFont:font];
+        XCTAssertFalse(exists,
+                       @"This string should not return a valid glyph from this font.");
+    }
+}
+
 - (void)testThatImageIsRenderedAtSize {
     CGFloat iconSize = 32.0;
     UIImage* img = [self imageWithIconSizeTheSameAsImageSize:iconSize];

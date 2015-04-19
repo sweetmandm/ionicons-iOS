@@ -12,18 +12,19 @@
 
 + (BOOL)doGlyphsReferencedInString:(NSString*)character existInFont:(UIFont*)font
 {
+    // safe for surrogate pairs http://www.objc.io/issue-9/unicode.html
+    
     CTFontRef ctFont = CTFontCreateWithName((__bridge CFStringRef)font.fontName, font.pointSize, NULL);
     
-    BOOL exists = YES;
-    for (int i = 0; i < character.length; i++) {
-        UniChar characters[] = { [character characterAtIndex:i] };
-        CGGlyph glyphs[1] = { };
-        
-        if (!CTFontGetGlyphsForCharacters(ctFont, characters, glyphs, 1)) {
-            exists = NO;
-            break;
-        }
-    }
+    NSUInteger length = [character lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;
+    
+    UniChar characters[length];
+    
+    CGGlyph glyphs[length];
+    
+    [character getCharacters:characters range:NSMakeRange(0, length)];
+    
+    BOOL exists = CTFontGetGlyphsForCharacters(ctFont, characters, glyphs, length);
     
     CFRelease(ctFont);
     
