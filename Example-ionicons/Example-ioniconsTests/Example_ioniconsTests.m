@@ -11,7 +11,6 @@
 #import "IonIcons.h"
 #import "FontInspector.h"
 @import CoreText;
-@import Accelerate;
 
 @interface IonIcons()
 // expose a private method:
