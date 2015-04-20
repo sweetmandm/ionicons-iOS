@@ -105,7 +105,7 @@
 
 /**
  *  Look through an image's pixels for a given color.
- *  Return when we've reached found the first matching pixel or reached the end.
+ *  Return when we've found the first matching pixel or reached the end.
  */
 - (BOOL)checkImage:(UIImage*)image forColor:(UIColor*)color
 {
@@ -120,7 +120,7 @@
     NSUInteger bytesPerPixel = 4;
     NSUInteger bitsPerComponent = 8;
     NSUInteger bytesPerRow = bytesPerPixel * width;
-    unsigned char *rawData = (unsigned char*) calloc(height * width * bytesPerPixel, sizeof(unsigned char));
+    uint8_t *rawData = (uint8_t*) calloc(height * width * bytesPerPixel, sizeof(uint8_t));
     CGContextRef context = CGBitmapContextCreate(rawData, width, height,
                                                  bitsPerComponent, bytesPerRow, colorSpace,
                                                  kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
@@ -133,11 +133,11 @@
         for (NSUInteger y = 0; y < height; y++) {
             
             NSUInteger byteIndex = (bytesPerRow * y) + x * bytesPerPixel;
-            CGFloat red   = (rawData[byteIndex]     * 1.0) / 255.0;
-            CGFloat green = (rawData[byteIndex + 1] * 1.0) / 255.0;
-            CGFloat blue  = (rawData[byteIndex + 2] * 1.0) / 255.0;
+            CGFloat thisR = (rawData[byteIndex] / 255.0);
+            CGFloat thisG = (rawData[byteIndex + 1] / 255.0);
+            CGFloat thisB = (rawData[byteIndex + 2] / 255.0);
             
-            if (red == r && green == g & blue == b) {
+            if (thisR == r && thisG == g & thisB == b) {
                 match = YES;
                 break;
             }
