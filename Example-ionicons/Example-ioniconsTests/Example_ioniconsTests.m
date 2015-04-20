@@ -141,9 +141,8 @@
                 match = YES;
                 break;
             }
-            
-            byteIndex += bytesPerPixel;
         }
+        if (match) { break; }
     }
     
     free(rawData);
