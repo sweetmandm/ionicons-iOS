@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreText/CoreText.h>
 
+@class UIFont;
 @interface FontInspector : NSObject
 
 + (BOOL)doGlyphsReferencedInString:(NSString*)character existInFont:(UIFont*)font;
