@@ -27,6 +27,7 @@
 		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
 		554206B318217179005A3D9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 554206AF18217179005A3D9E /* README.md */; };
 		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
+		644532D91BAB270E00DC25F0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 644532D81BAB270E00DC25F0 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		55E4275B1AE2DB6A00EF1098 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
 		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
 		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
+		644532D81BAB270E00DC25F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		5542067718217160005A3D9E /* Example-ionicons */ = {
 			isa = PBXGroup;
 			children = (
+				644532D81BAB270E00DC25F0 /* README.md */,
 				554206A918217179005A3D9E /* ionicons */,
 				5542068018217160005A3D9E /* AppDelegate.h */,
 				5542068118217160005A3D9E /* AppDelegate.m */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644532D91BAB270E00DC25F0 /* README.md in Sources */,
 				5542068B18217160005A3D9E /* ViewController.m in Sources */,
 				5542068218217160005A3D9E /* AppDelegate.m in Sources */,
 				55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */,
