@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "IonIcons"
+  s.name         = "ionicons"
   s.module_name  = "ionicons"
   s.version      = "2.0.2"
   s.summary      = "ionicons-iOS allows you to easily use ionicons icons in your iOS projects."
