@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.source_files = 'ionicons/**/*.{h,m}'
   s.resources     = "ionicons/ionicons.ttf"
-  s.ios.resource_bundle = { 'ionicons' => 'ionicons/Resources/*.ttf' }
+  s.ios.resource_bundle = { 'ionicons' => 'ionicons/ionicons.ttf' }
   s.requires_arc = true
 end
