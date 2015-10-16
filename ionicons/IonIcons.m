@@ -19,8 +19,31 @@
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
     UIFont* font = [UIFont fontWithName:@"ionicons" size:size];
+    if (!font) {
+        [[self class] dynamicallyLoadFontNamed:@"ionicons"];
+        font = [UIFont fontWithName:@"ionicons" size:size];
+    }
     NSAssert(font, @"Make sure you've added the font to the Info.plist first! View README.md for instructions.");
     return font;
+}
+
++ (void)dynamicallyLoadFontNamed:(NSString *)name
+{
+    NSString *resourceName = [NSString stringWithFormat:@"%@/%@", @"ionicons.bundle", name];
+    NSURL *url = [[NSBundle bundleForClass:self.class] URLForResource:resourceName withExtension:@"ttf"];
+    NSData *fontData = [NSData dataWithContentsOfURL:url];
+    if (fontData) {
+        CFErrorRef error;
+        CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)fontData);
+        CGFontRef font = CGFontCreateWithDataProvider(provider);
+        if (! CTFontManagerRegisterGraphicsFont(font, &error)) {
+            CFStringRef errorDescription = CFErrorCopyDescription(error);
+            NSLog(@"Failed to load font: %@", errorDescription);
+            CFRelease(errorDescription);
+        }
+        CFRelease(font);
+        CFRelease(provider);
+    }
 }
 
 + (UILabel*)labelWithIcon:(NSString*)icon_name
