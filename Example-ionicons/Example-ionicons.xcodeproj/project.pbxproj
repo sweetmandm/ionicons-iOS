@@ -23,9 +23,9 @@
 		5542069E18217160005A3D9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5542069C18217160005A3D9E /* InfoPlist.strings */; };
 		554206A018217160005A3D9E /* Example_ioniconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5542069F18217160005A3D9E /* Example_ioniconsTests.m */; };
 		554206B018217179005A3D9E /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 554206AC18217179005A3D9E /* IonIcons.m */; };
-		554206B118217179005A3D9E /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 554206AD18217179005A3D9E /* ionicons.ttf */; };
 		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
 		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
+		55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55FFA0991BDBFDD90004F457 /* ionicons.bundle */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +62,10 @@
 		554206AA18217179005A3D9E /* ionicons-codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ionicons-codes.h"; sourceTree = "<group>"; };
 		554206AB18217179005A3D9E /* IonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonIcons.h; sourceTree = "<group>"; };
 		554206AC18217179005A3D9E /* IonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonIcons.m; sourceTree = "<group>"; };
-		554206AD18217179005A3D9E /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		554206AE18217179005A3D9E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		55E4275A1AE2DB6A00EF1098 /* FontInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontInspector.h; sourceTree = "<group>"; };
 		55E4275B1AE2DB6A00EF1098 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
+		55FFA0991BDBFDD90004F457 /* ionicons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ionicons.bundle; sourceTree = "<group>"; };
 		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
 		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
 		644532D81BAB270E00DC25F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
@@ -179,10 +179,10 @@
 				554206AA18217179005A3D9E /* ionicons-codes.h */,
 				554206AB18217179005A3D9E /* IonIcons.h */,
 				554206AC18217179005A3D9E /* IonIcons.m */,
-				554206AD18217179005A3D9E /* ionicons.ttf */,
 				554206AE18217179005A3D9E /* LICENSE */,
 				55E4275A1AE2DB6A00EF1098 /* FontInspector.h */,
 				55E4275B1AE2DB6A00EF1098 /* FontInspector.m */,
+				55FFA0991BDBFDD90004F457 /* ionicons.bundle */,
 			);
 			name = ionicons;
 			path = ../../ionicons;
@@ -267,7 +267,7 @@
 			files = (
 				554206B218217179005A3D9E /* LICENSE in Resources */,
 				5542068818217160005A3D9E /* Main_iPad.storyboard in Resources */,
-				554206B118217179005A3D9E /* ionicons.ttf in Resources */,
+				55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */,
 				5542068D18217160005A3D9E /* Images.xcassets in Resources */,
 				5542068518217160005A3D9E /* Main_iPhone.storyboard in Resources */,
 				5542067C18217160005A3D9E /* InfoPlist.strings in Resources */,
