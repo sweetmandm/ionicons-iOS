@@ -6,8 +6,9 @@
 //
 
 #import "IonIcons.h"
-#import <QuartzCore/QuartzCore.h>
 #import "FontInspector.h"
+#import <QuartzCore/QuartzCore.h>
+#import <CoreText/CoreText.h>
 
 @implementation IonIcons
 
@@ -20,10 +21,10 @@
 {
     UIFont* font = [UIFont fontWithName:@"ionicons" size:size];
     if (!font) {
-        [[self class] dynamicallyLoadFontNamed:@"ionicons"];
+        [self dynamicallyLoadFontNamed:@"ionicons"];
         font = [UIFont fontWithName:@"ionicons" size:size];
     }
-    NSAssert(font, @"Make sure you've added the font to the Info.plist first! View README.md for instructions.");
+    NSAssert(font, @"The ionicons font failed to load.");
     return font;
 }
 
@@ -101,7 +102,7 @@
         [self checkGlyphsReferencedByString:icon_name existInFont:font];
         
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6) {
-            image = [self renderImageWithNSStirngDrawingWithIconName:icon_name
+            image = [self renderImageWithNSStringDrawingWithIconName:icon_name
                                                            iconColor:iconColor
                                                             iconSize:iconSize
                                                            imageSize:imageSize];
@@ -130,7 +131,7 @@
     return exists;
 }
 
-+ (UIImage*)renderImageWithNSStirngDrawingWithIconName:(NSString*)icon_name iconColor:(UIColor*)iconColor iconSize:(CGFloat)iconSize imageSize:(CGSize)imageSize
++ (UIImage*)renderImageWithNSStringDrawingWithIconName:(NSString*)icon_name iconColor:(UIColor*)iconColor iconSize:(CGFloat)iconSize imageSize:(CGSize)imageSize
 {
     if (!iconColor) { iconColor = [self defaultColor]; }
     

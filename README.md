@@ -12,6 +12,8 @@ The ionicons icon set includes a lot of iOS system icons as well as plenty of ha
 
 For available icons, look at ionicons-codes.h or [browse them at the **ionicons** website](http://ionicons.com).
 
+The available icon names will autocomplete if you've included the `IonIcons.h` header when you type `ion_...`
+
 Get the font:
 
     UIFont *ionIconsFont = [IonIcons fontWithSize:30.0f];
@@ -34,24 +36,11 @@ CocoaPods is great:
 
 1. add `pod 'ionicons'` to your Podfile
 2. `pod install`
-3. open the xcworkspace
-4. Modify your project's Info.plist file as described below
 
 Non-CocoaPods is easy too:
 
 1. Drag the folder 'ionicons' with the source files into your project
-2. Modify your project's Info.plist file as described below
-
-### Installation Step 2:
-
-Modify your project's Info.plist file:
-
-1. Open your project's Info.plist file by clicking on the project in the Navigator on the left, then choosing 'Info'.
-2. Under 'Custom iOS Target Properties', click the last Key in the list, then click on the '+' icon.
-3. For the new key, type 'Fonts provided by application'.
-4. Twirl down the arrow icon, double-tap the right-most box to enter the string value, and type 'ionicons.ttf'.
-![Info.plist modification](https://raw.github.com/TapTemplate/ionicons-iOS/master/Example-ionicons/img/install-instructions.png)
 
 ### License
-ionicons is released under the MIT license.  
-The stuff specific to ionicons-iOS is also released under the MIT license
+ionicons is released under the MIT license and was built by the people at http://ionicframework.com. Learn more at http://ionicons.com
+The stuff specific to ionicons-iOS is also released under the MIT license.

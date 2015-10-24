@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 TapTemplate. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "FontInspector.h"
+#import <CoreText/CoreText.h>
 
 @implementation FontInspector
 

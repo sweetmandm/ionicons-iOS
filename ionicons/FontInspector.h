@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 TapTemplate. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreText/CoreText.h>
+#import <UIKit/UIKit.h>
 
 @class UIFont;
 @interface FontInspector : NSObject
