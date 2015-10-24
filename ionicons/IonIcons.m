@@ -17,21 +17,25 @@
 // Font and Label Methods
 //================================
 
+NSString * const fontName = @"ionicons";
+
 + (UIFont*)fontWithSize:(CGFloat)size;
 {
-    UIFont* font = [UIFont fontWithName:@"ionicons" size:size];
+    UIFont *font = [UIFont fontWithName:fontName size:size];
     if (!font) {
-        [self dynamicallyLoadFontNamed:@"ionicons"];
-        font = [UIFont fontWithName:@"ionicons" size:size];
+        // Note: we'll only come through here the first time [IonIcons fontWithSize:] is called.
+        // The next time it's called, 'font' should be non-nil after the above initialization.
+        [self registerIoniconsFont];
+        font = [UIFont fontWithName:fontName size:size];
     }
     NSAssert(font, @"The ionicons font failed to load.");
     return font;
 }
 
-+ (void)dynamicallyLoadFontNamed:(NSString *)name
++ (void)registerIoniconsFont
 {
-    NSString *resourceName = [NSString stringWithFormat:@"%@/%@", @"ionicons.bundle", name];
-    NSURL *url = [[NSBundle bundleForClass:self.class] URLForResource:resourceName withExtension:@"ttf"];
+    NSBundle *ioniconsBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:self] pathForResource:@"ionicons" ofType:@"bundle"]];
+    NSURL *url = [ioniconsBundle URLForResource:fontName withExtension:@"ttf"];
     NSData *fontData = [NSData dataWithContentsOfURL:url];
     if (fontData) {
         CFErrorRef error;
