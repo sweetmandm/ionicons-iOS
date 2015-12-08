@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307938F01C1728E50034CC99 /* IonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307938EF1C1728E50034CC99 /* IonButton.swift */; };
+		30ACE8091C1780D8009EA9E6 /* IonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ACE8081C1780D8009EA9E6 /* IonImageView.swift */; };
 		554206721821715F005A3D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554206711821715F005A3D9E /* Foundation.framework */; };
 		5542067418217160005A3D9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554206731821715F005A3D9E /* CoreGraphics.framework */; };
 		5542067618217160005A3D9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5542067518217160005A3D9E /* UIKit.framework */; };
@@ -25,7 +27,7 @@
 		554206B018217179005A3D9E /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 554206AC18217179005A3D9E /* IonIcons.m */; };
 		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
 		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
-		55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55FFA0991BDBFDD90004F457 /* ionicons.bundle */; settings = {ASSET_TAGS = (); }; };
+		55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55FFA0991BDBFDD90004F457 /* ionicons.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307938EE1C1728E50034CC99 /* Example-ionicons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-ionicons-Bridging-Header.h"; sourceTree = "<group>"; };
+		307938EF1C1728E50034CC99 /* IonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IonButton.swift; sourceTree = "<group>"; };
+		30ACE8081C1780D8009EA9E6 /* IonImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IonImageView.swift; sourceTree = "<group>"; };
 		5542066E1821715F005A3D9E /* Example-ionicons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-ionicons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554206711821715F005A3D9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		554206731821715F005A3D9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				644532D81BAB270E00DC25F0 /* README.md */,
+				307938EE1C1728E50034CC99 /* Example-ionicons-Bridging-Header.h */,
 				554206A918217179005A3D9E /* ionicons */,
 				5542068018217160005A3D9E /* AppDelegate.h */,
 				5542068118217160005A3D9E /* AppDelegate.m */,
@@ -182,6 +188,8 @@
 				554206AE18217179005A3D9E /* LICENSE */,
 				55E4275A1AE2DB6A00EF1098 /* FontInspector.h */,
 				55E4275B1AE2DB6A00EF1098 /* FontInspector.m */,
+				307938EF1C1728E50034CC99 /* IonButton.swift */,
+				30ACE8081C1780D8009EA9E6 /* IonImageView.swift */,
 				55FFA0991BDBFDD90004F457 /* ionicons.bundle */,
 			);
 			name = ionicons;
@@ -233,6 +241,7 @@
 		554206661821715F005A3D9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = TapTemplate;
 				TargetAttributes = {
@@ -305,11 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307938F01C1728E50034CC99 /* IonButton.swift in Sources */,
 				5542068B18217160005A3D9E /* ViewController.m in Sources */,
 				5542068218217160005A3D9E /* AppDelegate.m in Sources */,
 				55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */,
 				5542067E18217160005A3D9E /* main.m in Sources */,
 				554206B018217179005A3D9E /* IonIcons.m in Sources */,
+				30ACE8091C1780D8009EA9E6 /* IonImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,10 +457,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-ionicons/Example-ionicons-Prefix.pch";
 				INFOPLIST_FILE = "Example-ionicons/Example-ionicons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Example-ionicons/Example-ionicons/Example-ionicons-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -459,10 +475,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example-ionicons/Example-ionicons-Prefix.pch";
 				INFOPLIST_FILE = "Example-ionicons/Example-ionicons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Example-ionicons/Example-ionicons/Example-ionicons-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
