@@ -1,5 +1,5 @@
 //
-//  IonButton.swift
+//  IonImageView.swift
 //  Example-ionicons
 //
 //  Created by Max Campolo on 12/8/15.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class IonButton: UIButton {
+class IonImageView: UIImageView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -28,21 +28,12 @@ class IonButton: UIButton {
         super.init(frame: frame)
     }
     
-    @IBInspectable var ionIconBackgroundImage: String? {
-        get {
-            return self.currentBackgroundImage?.description
-        }
-        set {
-            self.setBackgroundImage(IonIcons.imageWithIcon(self.convertToUnicode(newValue!), size: self.frame.size.width, color: .blackColor()).imageWithRenderingMode(.AlwaysTemplate), forState:UIControlState.Normal)
-        }
-    }
-    
     @IBInspectable var ionIconImage: String? {
         get {
-            return self.currentImage?.description
+            return self.image?.description
         }
         set {
-            self.setImage(IonIcons.imageWithIcon(self.convertToUnicode(newValue!), size: self.frame.size.width, color: .blackColor()).imageWithRenderingMode(.AlwaysTemplate), forState: .Normal)
+            self.image = IonIcons.imageWithIcon(self.convertToUnicode(newValue!), size: self.frame.size.width, color: .blackColor()).imageWithRenderingMode(.AlwaysTemplate)
         }
     }
     
@@ -57,5 +48,4 @@ class IonButton: UIButton {
         }
         return result
     }
-
 }

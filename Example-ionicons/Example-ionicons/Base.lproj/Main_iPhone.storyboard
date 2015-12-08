@@ -4,11 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="ionicons.ttf">
-            <string>Ionicons</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -22,14 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDV-Pu-yBy" customClass="IonButton" customModule="Example_ionicons" customModuleProvider="target">
-                                <rect key="frame" x="65" y="28" width="190" height="189"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-II-uDh" customClass="IonButton" customModule="Example_ionicons" customModuleProvider="target">
+                                <rect key="frame" x="39" y="46" width="126" height="126"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="15"/>
+                                <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="ionIconName" value="f366"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ionIconBackgroundImage" value="f360"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-SY-64i" customClass="IonImageView" customModule="Example_ionicons" customModuleProvider="target">
+                                <rect key="frame" x="27" y="231" width="241" height="150"/>
+                                <animations/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ionIconImage" value="f360"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
