@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "David Sweetman" => "david@davidsweetman.com" }
   s.source       = { :git => "https://github.com/sweetmandm/ionicons-iOS.git", :tag => "2.0.3" }
   s.platform     = :ios, '5.0'
+  s.tvos.deployment_target = "9.0"
   s.source_files = 'ionicons/**/*.{h,m}'
   s.resources    = "ionicons/ionicons.bundle"
   s.requires_arc = true
