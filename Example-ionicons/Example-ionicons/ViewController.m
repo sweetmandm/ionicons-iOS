@@ -5,7 +5,7 @@
 //
 
 #import "ViewController.h"
-#import "IonIcons.h"
+#import <ionicons/IonIcons.h>
 
 @interface ViewController ()
 

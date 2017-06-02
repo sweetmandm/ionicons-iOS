@@ -17,24 +17,24 @@
 		5542068818217160005A3D9E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5542068618217160005A3D9E /* Main_iPad.storyboard */; };
 		5542068B18217160005A3D9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5542068A18217160005A3D9E /* ViewController.m */; };
 		5542068D18217160005A3D9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5542068C18217160005A3D9E /* Images.xcassets */; };
-		5542069418217160005A3D9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5542069318217160005A3D9E /* XCTest.framework */; };
-		5542069518217160005A3D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554206711821715F005A3D9E /* Foundation.framework */; };
-		5542069618217160005A3D9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5542067518217160005A3D9E /* UIKit.framework */; };
-		5542069E18217160005A3D9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5542069C18217160005A3D9E /* InfoPlist.strings */; };
-		554206A018217160005A3D9E /* Example_ioniconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5542069F18217160005A3D9E /* Example_ioniconsTests.m */; };
-		554206B018217179005A3D9E /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 554206AC18217179005A3D9E /* IonIcons.m */; };
-		554206B218217179005A3D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 554206AE18217179005A3D9E /* LICENSE */; };
-		55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E4275B1AE2DB6A00EF1098 /* FontInspector.m */; };
-		55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55FFA0991BDBFDD90004F457 /* ionicons.bundle */; };
+		83BAFFF71EE229D20095E1C9 /* ionicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BAFFF41EE229C50095E1C9 /* ionicons.framework */; };
+		83BAFFFC1EE22B3C0095E1C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BAFFFB1EE22B3C0095E1C9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5542069718217160005A3D9E /* PBXContainerItemProxy */ = {
+		83BAFFF31EE229C50095E1C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 554206661821715F005A3D9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5542066D1821715F005A3D9E;
-			remoteInfo = "Example-ionicons";
+			containerPortal = 83BAFFEE1EE229C50095E1C9 /* ionicons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 836FB6C21EB7B96100E18C57;
+			remoteInfo = ionicons;
+		};
+		83BAFFF51EE229C50095E1C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83BAFFEE1EE229C50095E1C9 /* ionicons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 836FB6CA1EB7B96100E18C57;
+			remoteInfo = ioniconsTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,21 +54,10 @@
 		5542068918217160005A3D9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5542068A18217160005A3D9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5542068C18217160005A3D9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5542069218217160005A3D9E /* Example-ioniconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example-ioniconsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5542069318217160005A3D9E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5542069B18217160005A3D9E /* Example-ioniconsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-ioniconsTests-Info.plist"; sourceTree = "<group>"; };
-		5542069D18217160005A3D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5542069F18217160005A3D9E /* Example_ioniconsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Example_ioniconsTests.m; sourceTree = "<group>"; };
-		554206AA18217179005A3D9E /* ionicons-codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ionicons-codes.h"; sourceTree = "<group>"; };
-		554206AB18217179005A3D9E /* IonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonIcons.h; sourceTree = "<group>"; };
-		554206AC18217179005A3D9E /* IonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonIcons.m; sourceTree = "<group>"; };
-		554206AE18217179005A3D9E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		55E4275A1AE2DB6A00EF1098 /* FontInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontInspector.h; sourceTree = "<group>"; };
-		55E4275B1AE2DB6A00EF1098 /* FontInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontInspector.m; sourceTree = "<group>"; };
-		55FFA0991BDBFDD90004F457 /* ionicons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ionicons.bundle; sourceTree = "<group>"; };
-		6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAllIconCodesArray.sh; sourceTree = "<group>"; };
-		6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allIconCodes.h; sourceTree = "<group>"; };
 		644532D81BAB270E00DC25F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		83BAFFEE1EE229C50095E1C9 /* ionicons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ionicons.xcodeproj; path = ../../ionicons/ionicons.xcodeproj; sourceTree = "<group>"; };
+		83BAFFFB1EE22B3C0095E1C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,19 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BAFFF71EE229D20095E1C9 /* ionicons.framework in Frameworks */,
 				5542067418217160005A3D9E /* CoreGraphics.framework in Frameworks */,
 				5542067618217160005A3D9E /* UIKit.framework in Frameworks */,
 				554206721821715F005A3D9E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5542068F18217160005A3D9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5542069418217160005A3D9E /* XCTest.framework in Frameworks */,
-				5542069618217160005A3D9E /* UIKit.framework in Frameworks */,
-				5542069518217160005A3D9E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				5542067718217160005A3D9E /* Example-ionicons */,
-				5542069918217160005A3D9E /* Example-ioniconsTests */,
 				554206701821715F005A3D9E /* Frameworks */,
 				5542066F1821715F005A3D9E /* Products */,
 			);
@@ -109,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				5542066E1821715F005A3D9E /* Example-ionicons.app */,
-				5542069218217160005A3D9E /* Example-ioniconsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,12 +106,13 @@
 		5542067718217160005A3D9E /* Example-ionicons */ = {
 			isa = PBXGroup;
 			children = (
+				83BAFFEE1EE229C50095E1C9 /* ionicons.xcodeproj */,
 				644532D81BAB270E00DC25F0 /* README.md */,
-				554206A918217179005A3D9E /* ionicons */,
 				5542068018217160005A3D9E /* AppDelegate.h */,
 				5542068118217160005A3D9E /* AppDelegate.m */,
 				5542068318217160005A3D9E /* Main_iPhone.storyboard */,
 				5542068618217160005A3D9E /* Main_iPad.storyboard */,
+				83BAFFFB1EE22B3C0095E1C9 /* LaunchScreen.storyboard */,
 				5542068918217160005A3D9E /* ViewController.h */,
 				5542068A18217160005A3D9E /* ViewController.m */,
 				5542068C18217160005A3D9E /* Images.xcassets */,
@@ -153,39 +132,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5542069918217160005A3D9E /* Example-ioniconsTests */ = {
+		83BAFFEF1EE229C50095E1C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5542069F18217160005A3D9E /* Example_ioniconsTests.m */,
-				5542069A18217160005A3D9E /* Supporting Files */,
-				6303D8EB1AE2AF3300FCC5BF /* generateAllIconCodesArray.sh */,
-				6303D8EC1AE2BADE00FCC5BF /* allIconCodes.h */,
+				83BAFFF41EE229C50095E1C9 /* ionicons.framework */,
+				83BAFFF61EE229C50095E1C9 /* ioniconsTests.xctest */,
 			);
-			path = "Example-ioniconsTests";
-			sourceTree = "<group>";
-		};
-		5542069A18217160005A3D9E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5542069B18217160005A3D9E /* Example-ioniconsTests-Info.plist */,
-				5542069C18217160005A3D9E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		554206A918217179005A3D9E /* ionicons */ = {
-			isa = PBXGroup;
-			children = (
-				554206AA18217179005A3D9E /* ionicons-codes.h */,
-				554206AB18217179005A3D9E /* IonIcons.h */,
-				554206AC18217179005A3D9E /* IonIcons.m */,
-				554206AE18217179005A3D9E /* LICENSE */,
-				55E4275A1AE2DB6A00EF1098 /* FontInspector.h */,
-				55E4275B1AE2DB6A00EF1098 /* FontInspector.m */,
-				55FFA0991BDBFDD90004F457 /* ionicons.bundle */,
-			);
-			name = ionicons;
-			path = ../../ionicons;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,25 +161,6 @@
 			productReference = 5542066E1821715F005A3D9E /* Example-ionicons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5542069118217160005A3D9E /* Example-ioniconsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 554206A618217160005A3D9E /* Build configuration list for PBXNativeTarget "Example-ioniconsTests" */;
-			buildPhases = (
-				6303D8EA1AE2AE5B00FCC5BF /* ShellScript */,
-				5542068E18217160005A3D9E /* Sources */,
-				5542068F18217160005A3D9E /* Frameworks */,
-				5542069018217160005A3D9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5542069818217160005A3D9E /* PBXTargetDependency */,
-			);
-			name = "Example-ioniconsTests";
-			productName = "Example-ioniconsTests";
-			productReference = 5542069218217160005A3D9E /* Example-ioniconsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,11 +169,6 @@
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = TapTemplate;
-				TargetAttributes = {
-					5542069118217160005A3D9E = {
-						TestTargetID = 5542066D1821715F005A3D9E;
-					};
-				};
 			};
 			buildConfigurationList = 554206691821715F005A3D9E /* Build configuration list for PBXProject "Example-ionicons" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -252,53 +181,50 @@
 			mainGroup = 554206651821715F005A3D9E;
 			productRefGroup = 5542066F1821715F005A3D9E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83BAFFEF1EE229C50095E1C9 /* Products */;
+					ProjectRef = 83BAFFEE1EE229C50095E1C9 /* ionicons.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5542066D1821715F005A3D9E /* Example-ionicons */,
-				5542069118217160005A3D9E /* Example-ioniconsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		83BAFFF41EE229C50095E1C9 /* ionicons.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ionicons.framework;
+			remoteRef = 83BAFFF31EE229C50095E1C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		83BAFFF61EE229C50095E1C9 /* ioniconsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ioniconsTests.xctest;
+			remoteRef = 83BAFFF51EE229C50095E1C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5542066C1821715F005A3D9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554206B218217179005A3D9E /* LICENSE in Resources */,
 				5542068818217160005A3D9E /* Main_iPad.storyboard in Resources */,
-				55FFA09A1BDBFDD90004F457 /* ionicons.bundle in Resources */,
 				5542068D18217160005A3D9E /* Images.xcassets in Resources */,
 				5542068518217160005A3D9E /* Main_iPhone.storyboard in Resources */,
+				83BAFFFC1EE22B3C0095E1C9 /* LaunchScreen.storyboard in Resources */,
 				5542067C18217160005A3D9E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5542069018217160005A3D9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5542069E18217160005A3D9E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6303D8EA1AE2AE5B00FCC5BF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Example-ioniconsTests/generateAllIconCodesArray.sh";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5542066A1821715F005A3D9E /* Sources */ = {
@@ -307,29 +233,11 @@
 			files = (
 				5542068B18217160005A3D9E /* ViewController.m in Sources */,
 				5542068218217160005A3D9E /* AppDelegate.m in Sources */,
-				55E4275C1AE2DB6A00EF1098 /* FontInspector.m in Sources */,
 				5542067E18217160005A3D9E /* main.m in Sources */,
-				554206B018217179005A3D9E /* IonIcons.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5542068E18217160005A3D9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				554206A018217160005A3D9E /* Example_ioniconsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5542069818217160005A3D9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5542066D1821715F005A3D9E /* Example-ionicons */;
-			targetProxy = 5542069718217160005A3D9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5542067A18217160005A3D9E /* InfoPlist.strings */ = {
@@ -354,14 +262,6 @@
 				5542068718217160005A3D9E /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		5542069C18217160005A3D9E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5542069D18217160005A3D9E /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -480,50 +380,6 @@
 			};
 			name = Release;
 		};
-		554206A718217160005A3D9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Example-ionicons.app/Example-ionicons";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example-ionicons/Example-ionicons-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Example-ioniconsTests/Example-ioniconsTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taptemplate.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		554206A818217160005A3D9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Example-ionicons.app/Example-ionicons";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example-ionicons/Example-ionicons-Prefix.pch";
-				INFOPLIST_FILE = "Example-ioniconsTests/Example-ioniconsTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taptemplate.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,15 +397,6 @@
 			buildConfigurations = (
 				554206A418217160005A3D9E /* Debug */,
 				554206A518217160005A3D9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		554206A618217160005A3D9E /* Build configuration list for PBXNativeTarget "Example-ioniconsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				554206A718217160005A3D9E /* Debug */,
-				554206A818217160005A3D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
