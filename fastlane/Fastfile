@@ -1,0 +1,13 @@
+fastlane_version "2.36.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Runs all the tests"
+  lane :test do
+    scan(
+      project: "ionicons/ionicons.xcodeproj",
+      scheme: "ionicons"
+    )
+  end
+end

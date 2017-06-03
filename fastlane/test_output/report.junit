@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ioniconsTests.xctest' tests='9' failures='0'>
+  <testsuite name='Example_ioniconsTests' tests='9' failures='0'>
+    <testcase classname='Example_ioniconsTests' name='testBadNamesReturnNoGlyphs' time='0.015'/>
+    <testcase classname='Example_ioniconsTests' name='testDefaultImageColor' time='0.011'/>
+    <testcase classname='Example_ioniconsTests' name='testForValidFontName' time='0.001'/>
+    <testcase classname='Example_ioniconsTests' name='testIconNamesReturnGlyphs' time='0.018'/>
+    <testcase classname='Example_ioniconsTests' name='testImageColor' time='0.004'/>
+    <testcase classname='Example_ioniconsTests' name='testImageForNonNil' time='0.003'/>
+    <testcase classname='Example_ioniconsTests' name='testThatIconAndImageSizeAreDistinct' time='0.003'/>
+    <testcase classname='Example_ioniconsTests' name='testThatImageIsRenderedAtSize' time='0.002'/>
+    <testcase classname='Example_ioniconsTests' name='testThatSizeAllowsNonSquare' time='0.001'/>
+  </testsuite>
+</testsuites>
