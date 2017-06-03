@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -9,80 +9,83 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5542069118217160005A3D9E"
-               BuildableName = "Example-ioniconsTests.xctest"
-               BlueprintName = "Example-ioniconsTests"
-               ReferencedContainer = "container:Example-ionicons.xcodeproj">
+               BlueprintIdentifier = "836FB6C11EB7B96100E18C57"
+               BuildableName = "ionicons.framework"
+               BlueprintName = "ionicons"
+               ReferencedContainer = "container:ionicons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5542069118217160005A3D9E"
-               BuildableName = "Example-ioniconsTests.xctest"
-               BlueprintName = "Example-ioniconsTests"
-               ReferencedContainer = "container:Example-ionicons.xcodeproj">
+               BlueprintIdentifier = "836FB6C91EB7B96100E18C57"
+               BuildableName = "ioniconsTests.xctest"
+               BlueprintName = "ioniconsTests"
+               ReferencedContainer = "container:ionicons.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5542069118217160005A3D9E"
-            BuildableName = "Example-ioniconsTests.xctest"
-            BlueprintName = "Example-ioniconsTests"
-            ReferencedContainer = "container:Example-ionicons.xcodeproj">
+            BlueprintIdentifier = "836FB6C11EB7B96100E18C57"
+            BuildableName = "ionicons.framework"
+            BlueprintName = "ionicons"
+            ReferencedContainer = "container:ionicons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5542069118217160005A3D9E"
-            BuildableName = "Example-ioniconsTests.xctest"
-            BlueprintName = "Example-ioniconsTests"
-            ReferencedContainer = "container:Example-ionicons.xcodeproj">
+            BlueprintIdentifier = "836FB6C11EB7B96100E18C57"
+            BuildableName = "ionicons.framework"
+            BlueprintName = "ionicons"
+            ReferencedContainer = "container:ionicons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5542069118217160005A3D9E"
-            BuildableName = "Example-ioniconsTests.xctest"
-            BlueprintName = "Example-ioniconsTests"
-            ReferencedContainer = "container:Example-ionicons.xcodeproj">
+            BlueprintIdentifier = "836FB6C11EB7B96100E18C57"
+            BuildableName = "ionicons.framework"
+            BlueprintName = "ionicons"
+            ReferencedContainer = "container:ionicons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

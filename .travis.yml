@@ -1,4 +1,8 @@
 language: objective-c
-xcode_project: Example-ionicons/Example-ionicons.xcodeproj
-xcode_scheme: Example-ioniconsTests
-xcode_sdk: iphonesimulator
+osx_image: xcode8.3
+
+before_install:
+  - gem update fastlane
+
+script:
+  - fastlane test

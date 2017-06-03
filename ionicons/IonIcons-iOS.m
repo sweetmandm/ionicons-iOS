@@ -1,11 +1,11 @@
 //
 //  IonIcons.m
-//  ionicons-iOS is Copyright 2013 TapTemplate and released under the MIT license.
+//  ionicons-iOS is Copyright 2013 David Sweetman and released under the MIT license.
 //  http://www.taptemplate.com
 //  ==========================
 //
 
-#import "IonIcons.h"
+#import "IonIcons-iOS.h"
 #import "FontInspector.h"
 #import <QuartzCore/QuartzCore.h>
 #import <CoreText/CoreText.h>

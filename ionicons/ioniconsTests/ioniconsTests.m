@@ -1,9 +1,9 @@
 //
-//  Example_ioniconsTests.m
-//  Example-ioniconsTests
+//  ioniconsTests.m
+//  ioniconsTests
 //
-//  Created by ds on 10/30/13.
-//  Copyright (c) 2013 TapTemplate. All rights reserved.
+//  Created by sweetman on 5/1/17.
+//  Copyright © 2017 David Sweetman. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
