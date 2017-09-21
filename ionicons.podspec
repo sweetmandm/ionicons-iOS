@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "ionicons"
   s.module_name  = "ionicons"
-  s.version      = "2.1.0"
+  s.version      = "2.1.1"
   s.summary      = "ionicons-iOS allows you to easily use ionicons icons in your iOS projects."
   s.homepage     = "https://github.com/TapTemplate/ionicons-iOS"
   s.license      = { :type => 'MIT', :file => 'ionicons/LICENSE' }
@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.tvos.deployment_target = "9.0"
   s.source_files = 'ionicons/**/*.{h,m}'
+  s.exclude_files = 'ionicons/ioniconsTests/'
   s.resources    = "ionicons/ionicons.bundle"
   s.requires_arc = true
 end
