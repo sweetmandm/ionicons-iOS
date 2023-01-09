@@ -34,8 +34,7 @@ NSString * const fontName = @"ionicons";
 
 + (void)registerIoniconsFont
 {
-    NSBundle *ioniconsBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:self] pathForResource:@"ionicons" ofType:@"bundle"]];
-    NSURL *url = [ioniconsBundle URLForResource:fontName withExtension:@"ttf"];
+    NSURL *url = [NSURL URLWithString: [[[[NSBundle bundleForClass:self] bundleURL] absoluteString] stringByAppendingString:@"IonIcons_IonIcons.bundle/ionicons.ttf"]];
     NSData *fontData = [NSData dataWithContentsOfURL:url];
     if (fontData) {
         CFErrorRef error;

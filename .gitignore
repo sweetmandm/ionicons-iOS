@@ -20,3 +20,6 @@ xcuserdata
 
 # Cocoapods
 */Pods/*
+
+# SPM
+.build
